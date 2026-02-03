@@ -13,7 +13,7 @@ The solution consists of:
 
 ## Architecture Diagram
 
-![Audit Logging for Amazon Athena Architecture](Images/Audit-Logging-for-Amazon-Athena.png)
+![Audit Logging for Amazon Athena Architecture](Audit-Logging-for-Amazon-Athena.png)
 
 ## Step 1: Create S3 Bucket for Audit Records
 
