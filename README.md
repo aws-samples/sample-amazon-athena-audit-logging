@@ -283,7 +283,7 @@ Create a scheduled rule that runs the backfill Lambda every 10 minutes.
 Create an Athena table that allows you to query the audit logs using SQL.
 
 - Open the **Amazon Athena console**
-- In the query editor, run the following DDL statement (replace `<account-id>` with your AWS account ID):
+- In the query editor, run the following DDL statement (replace `athena-audit-logs-<account-id>` with your bucket name):
 
 ```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS athena_audit_logs (
