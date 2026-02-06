@@ -97,7 +97,7 @@ Create an IAM role that grants the Lambda functions permissions to access Athena
 }
 ```
 
-- Replace `<account-id>` with your AWS account ID
+- Replace `athena-audit-logs-<account-id>` with your bucket name
 - Choose **Next: Tags**, then **Next: Review**
 - Enter a policy name (e.g., `AthenaAuditLambdaPolicy`)
 - Choose **Create policy**
