@@ -366,28 +366,30 @@ ORDER BY query_count DESC;
 
 If you want to remove the solution, follow these steps:
 
-1. **Delete EventBridge rules:**
+1. **Delete EventBridge rule:**
    - `athena-query-state-change-rule`
+  
+2. **Delete EventBridge schedule:**
    - `athena-audit-backfill-schedule`
 
-2. **Delete Lambda functions:**
+3. **Delete Lambda functions:**
    - `athena-audit-enrichment`
    - `athena-audit-cloudtrail-backfill`
 
-3. **Delete CloudWatch Log Groups:**
+4. **Delete CloudWatch Log Groups:**
    - `/aws/lambda/athena-audit-enrichment`
    - `/aws/lambda/athena-audit-cloudtrail-backfill`
 
-4. **Delete IAM role and policy:**
+5. **Delete IAM role and policy:**
    - `AthenaAuditLambdaRole`
    - `AthenaAuditLambdaPolicy`
 
-5. **Delete Athena table (optional):**
+6. **Delete Athena table (optional):**
    ```sql
    DROP TABLE athena_audit_logs;
    ```
 
-6. **Delete S3 bucket (optional):**
+7. **Delete S3 bucket (optional):**
    - Empty the bucket first, then delete it
 
 **Warning:** Deleting the S3 bucket will permanently remove all audit records. Consider archiving them first if needed for compliance.
