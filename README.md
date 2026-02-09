@@ -149,7 +149,7 @@ Create the Lambda function that enriches Athena query events with metadata and u
 
    - **How it works**: A query is audited **only if** it matches **every** configured filter
 
-    **⚠️ IMPORTANT**: You **MUST** explicitly set `AUDIT_FILTER_LOGIC=AND` to use AND logic
+**⚠️ IMPORTANT**: You **MUST** explicitly set `AUDIT_FILTER_LOGIC=AND` to use AND logic
 
 
 
