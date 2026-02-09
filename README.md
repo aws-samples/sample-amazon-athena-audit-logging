@@ -114,7 +114,7 @@ Create the Lambda function that enriches Athena query events with metadata and u
 - Under **Permissions**, choose **Use an existing role**
 - Select the role you created in Step 2
 - Choose **Create function**
-- In the **Code** tab, replace the default code with the contents of `lambda_enrichment.py` (provided in the attached files)
+- In the **Code** tab, replace the default code with the contents of `lambda_enrichment.py` (provided in the repo)
 - In the **Configuration** tab, choose **Environment variables**
 - Choose **Edit**, then **Add environment variable**
 - Add the following variables:
@@ -123,7 +123,7 @@ Create the Lambda function that enriches Athena query events with metadata and u
 - **Optional**: Add filtering environment variables to audit only specific tables/databases/workgroups:
     By default, the solution audits **all** Athena queries in your account. However, you can configure filters to audit only specific queries based on workgroups, databases, or tables.
 
-    You can use any combination of these three filters:
+    You can use any combination of these filters:
 
     - **`AUDIT_WORKGROUPS_FILTER`** - Comma-separated list of workgroup names to audit (e.g., `production-workgroup,sensitive-workgroup`)
     - **`AUDIT_DATABASES_FILTER`** - Comma-separated list of database names to audit (e.g., `production_db,sensitive_db,analytics_db`)
@@ -233,7 +233,7 @@ Create the scheduled Lambda function that backfills missing CloudTrail data.
 - Under **Permissions**, choose **Use an existing role**
 - Select the role you created in Step 2 (same role as enrichment Lambda)
 - Choose **Create function**
-- In the **Code** tab, replace the default code with the contents of `lambda_backfill.py` (provided in the attached files)
+- In the **Code** tab, replace the default code with the contents of `lambda_backfill.py` (provided in the repo)
 - In the **Configuration** tab, choose **Environment variables**
 - Choose **Edit**, then **Add environment variable**
 - Add the following variable:
