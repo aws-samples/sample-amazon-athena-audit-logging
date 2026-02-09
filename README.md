@@ -3,7 +3,7 @@
 This solution provides comprehensive audit logging for Amazon Athena queries, enriching query metadata with user identity information from CloudTrail. The system captures Athena query executions and stores enriched audit records in S3 for compliance and analysis purposes.
 
 ## Why this solution ?
-In regulated industries such as healthcare, financial services, and government, maintaining detailed audit trails of data access is not just a best practice- it's a compliance requirement. Organizations subject to regulations like HIPAA, SOX, GDPR, and FedRAMP must demonstrate who accessed what data, when, and from where. 
+In regulated industries such as healthcare, financial services, and government, maintaining detailed audit trails of data access is not just a best practice- it's a compliance requirement. Organizations subject to regulations like HIPAA, SOX, GDPR, and FedRAMP must demonstrate who accessed what data, when, and from where. This solution helps organizations in regulated industries meet compliance requirements. 
 
 ## Architecture Overview
 
