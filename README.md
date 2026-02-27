@@ -364,7 +364,7 @@ GROUP BY user_name
 ORDER BY query_count DESC;
 ```
 
-**As a best practice, we advise thoroughly testing all implementations in lower environments before deploying to production.**
+**⚠️IMPORTANT: As a best practice, we advise thoroughly testing all implementations in lower environments before deploying to production.**
 
 ## Cleanup
 
