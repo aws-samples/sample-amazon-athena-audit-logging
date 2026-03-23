@@ -29,7 +29,7 @@ First, create an S3 bucket to store the enriched audit records. This bucket will
 - Leave other settings as default
 - Choose **Create bucket**
 
-**Note:** Record the bucket name—you'll need for the Lambda function configuration.
+**Note:** Record the bucket name — you'll need for the Lambda function configuration.
 
 ## Step 2: Create IAM Role for Lambda Functions
 
